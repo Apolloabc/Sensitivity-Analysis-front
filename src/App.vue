@@ -1,41 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data(){
-    return{}
-  },
-  mounted(){
-    this.axios({
-      method: "post",
-      url: "/SA-back-project/test",
-      data: this.qs.stringify({
-        username:'jj',
-        password:'jj'
-      })
-    }).then((res)=>{
-      console.log(res.data)
-    }).catch((err)=>{
-      console.log(err)
-    })
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+body{
+  margin: 0;
+  padding: 0;
 }
 </style>

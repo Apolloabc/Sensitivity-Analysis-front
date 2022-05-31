@@ -8,10 +8,13 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
-
+// 引入echart
+import Echarts from "echarts";
+Vue.prototype.$echarts = Echarts;
 // 引入axios
 import axios from 'axios'
-Vue.prototype.axios = axios
+Vue.prototype.$axios = axios
+
 
 // 引入qs，往后台传数据进行参数转换
 import qs from 'qs'
