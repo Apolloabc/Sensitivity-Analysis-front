@@ -11,6 +11,8 @@
 > 172.21.212.44: 前端使用Nginx部署, 后端直接运行jar包，两者之间通过Nginx转发请求。
 > 172.21.212.43: 放有SWAT服务的模型容器，存放地理数据的GeoServer
 
+> GitHub网址：https://github.com/Apolloabc/Sensitivity-Analysis-front
+
 ## Build Setup
 
 ``` bash
